@@ -1,8 +1,12 @@
 import requests
 from flight_data import FlightData
+import dotenv
+import os
 
-API_KEY = "QAxXH02pYbUqYLiu4W95HoXG6LYfjYvr"
-API_SECRET = "lA0vszPEsvgO9LwE"
+dotenv.load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+API_SECRET = os.getenv("API_SECRET")
 
 MAX_FLIGHTS_PER_DAY = 5
 MAX_PRICE = 800

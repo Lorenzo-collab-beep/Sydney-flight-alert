@@ -5,7 +5,7 @@ import flight_data
 import notifier
 
 SLEEP_TIME = 1
-DAY_TO_CHECK = 3
+DAY_TO_CHECK = 180
 
 date_start = datetime.datetime.today()
 date_end = date_start + datetime.timedelta(days=DAY_TO_CHECK)
